@@ -82,13 +82,13 @@ Rscript ../Make_Venn.R DESeq2_FDR005_filtered.tsv  edgeR_FDR005_filtered.tsv DES
 | File Type 	| File Name 	| File Description 	|
 |---------------------------------	|-----------------------------------	|---------------------------------------------------------------------------	|
 | Log Files 	| sessioninfo.txt 	| Session Info for the current run 	|
-|  	| edgeR_log.txt 	| log from the edgeR package 	|
-|  	| DESeq2_log.txt 	| log from the DESeq2 package 	|
+|  	| edgeR_log.txt 	| Log from the edgeR package 	|
+|  	| DESeq2_log.txt 	| Log from the DESeq2 package 	|
 | Rdata Files 	| edgeR_results.RData 	| edgeR results stored as Rdata Object 	|
 |  	| DESeq2_results.RData 	| DESeq2 results stored as Rdata Object 	|
-| Exploratory data visualizations 	| DESeq2_Cluster_Dendrogram.png 	| cluster dendrogram for control and treatment samples 	|
+| Exploratory data visualizations 	| DESeq2_Cluster_Dendrogram.png 	| Cluster dendrogram for control and treatment samples 	|
 |  	| DESeq2_Cooks_distance_boxplot.png 	| Boxplot showing the distribution of Cook’s distances for each library|
-|  	| Sample_distance_matrix.png 	| heatmap showing the Euclidian distances between samples 	|
+|  	| Sample_distance_matrix.png 	| Heatmap showing the Euclidian distances between samples 	|
 |  	| DESeq2_PCA_with_Labels.png 	| PCA plot with lables 	|
 |  	| edgeR_mds.png 	| PCA plot from edgeR 	|
 | DESeq2 Result Tables 	| DESeq2_All.tsv 	| Complete Table from DESeq2 (no filter) 	|
@@ -102,6 +102,9 @@ Rscript ../Make_Venn.R DESeq2_FDR005_filtered.tsv  edgeR_FDR005_filtered.tsv DES
 | Comaprison of DESeq2 and edgeR 	| FDR005_Overlap.tsv 	| Table for the overlapping DE genes (FDR <= 0.05) 	|
 |  	| FDR005_Venn.png 	| Venn diagram for overlap between DESeq2 and edgeR DE genes at FDR <= 0.05 	|
 | GSEA Pre-ranked file 	| GSEA.rnk 	| GSEA pre-ranked file 	|
+
+#### Example plots generated through pipeline:
+![**Figure A**](/test_data/example_plots.png) 
 
 ## Example data:
 Eample data is provided in the directory **test_data**. It contains a random counts matrix and annotations (Human).
