@@ -57,7 +57,6 @@ git clone https://github.com/sagarutturkar/RNASeq_DE_Pipeline.git
 system("RScript DE_pairwise_pipeline.R   <Count_Matrix>  <Control_Name>  <Treatment_Name>  <Number_of_Control_replicates>  <Number_of_Treatment_replicates>  <Annotation.TXT>")
 
 system("RScript Make_venn.R  DESeq2_FDR005_filtered.tsv  edgeR_FDR005_filtered.tsv DESeq2  edgeR  <custom_TAG> <Annotation.TXT>")
-
 ```
 
 **Working Example** (for Rstudio)
@@ -65,13 +64,20 @@ system("RScript Make_venn.R  DESeq2_FDR005_filtered.tsv  edgeR_FDR005_filtered.t
 system("RScript DE_pairwise_pipeline.R   C1.TXT  control  treated  3  3  Annotation.TXT")
 
 system("RScript Make_venn.R  DESeq2_FDR005_filtered.tsv  edgeR_FDR005_filtered.tsv DESeq2  edgeR  FDR005   Annotation.TXT")
+```
 
+**On Linux** (command line):
+```
+cd test_data
+
+Rscript ../DE_pairwise_pipeline.R C1.txt  control  treated  3  3  Annotation.txt
+
+Rscript ../Make_Venn.R DESeq2_FDR005_filtered.tsv  edgeR_FDR005_filtered.tsv DESeq2  edgeR  FDR005   Annotation.txt
 ```
 
 ## Output files summary:
 ### Note:
-> Result tables are TAB delimited TEXT files  
-> Best viewed when opened in excel.
+> Result tables are TAB delimited TEXT files and best viewed when opened in Excel.
 
 | File Type 	| File Name 	| File Description 	|
 |---------------------------------	|-----------------------------------	|---------------------------------------------------------------------------	|
@@ -97,8 +103,8 @@ system("RScript Make_venn.R  DESeq2_FDR005_filtered.tsv  edgeR_FDR005_filtered.t
 |  	| FDR005_Venn.png 	| Venn diagram for overlap between DESeq2 and edgeR DE genes at FDR <= 0.05 	|
 | GSEA Pre-ranked file 	| GSEA.rnk 	| GSEA pre-ranked file 	|
 
-## Working example:
-Working example data is provided in the directory **test_data**. It contains a random counts matrix (Human data) and human annotation data downloaded from ENSEMBL.
+## Example data:
+Eample data is provided in the directory **test_data**. It contains a random counts matrix and annotations (Human).
 
 Steps:
 1. Download the two R scripts **(DE_pairwise_pipeline.R and Make_Venn.R)**.
