@@ -59,9 +59,9 @@ system("RScript Make_venn.R  DESeq2_FDR005_filtered.tsv  edgeR_FDR005_filtered.t
 
 **Working Example** (for Rstudio)
 ```
-system("RScript DE_pairwise_pipeline.R   C1.TXT  control  treated  3  3  Human_Annotation.TXT")
+system("RScript DE_pairwise_pipeline.R   C1.TXT  control  treated  3  3  Annotation.TXT")
 
-system("RScript Make_venn.R  DESeq2_FDR005_filtered.tsv  edgeR_FDR005_filtered.tsv DESeq2  edgeR  FDR005 Human_Annotation.TXT")
+system("RScript Make_venn.R  DESeq2_FDR005_filtered.tsv  edgeR_FDR005_filtered.tsv DESeq2  edgeR  FDR005 Annotation.TXT")
 
 ```
 
