@@ -20,7 +20,7 @@ library(edgeR)
 library(VennDiagram)
 ```
 ## Expected input:
-1. **Complete Count matrix** (typically obtained from HTSeq or similar tool):
+### 1. Complete Count matrix (typically obtained from HTSeq or similar tool):
 
 Example: The first column should have strict name **Gene_ID**, followed by control and treatment replicates denoted with numbers. 
 
@@ -34,7 +34,7 @@ Example: The first column should have strict name **Gene_ID**, followed by contr
 | ENSG00000000938 	| 2 	| 0 	| 0 	| 0 	| 0 	| 1 	|
 
 
-2. **Annotation file** (Typically downloaded from the ENSEMBL or similar database):
+### 2. Annotation file (typically downloaded from the ENSEMBL or similar database):
 
 Example:
 
@@ -48,7 +48,10 @@ Example:
 | ENSG00000176749 	| protein_coding 	| CDK5R1 	| cyclin dependent kinase 5 regulatory subunit 1 [Source:HGNC Symbol;Acc:HGNC:1775] 	|
 
 ## Quick start:
-
+Clone of download the repository:
+```
+git clone https://github.com/sagarutturkar/RNASeq_DE_Pipeline.git
+```
 **Syntax** (for Rstudio)
 ```
 system("RScript DE_pairwise_pipeline.R   <Count_Matrix>  <Control_Name>  <Treatment_Name>  <Number_of_Control_replicates>  <Number_of_Treatment_replicates>  <Annotation.TXT>")
@@ -61,7 +64,7 @@ system("RScript Make_venn.R  DESeq2_FDR005_filtered.tsv  edgeR_FDR005_filtered.t
 ```
 system("RScript DE_pairwise_pipeline.R   C1.TXT  control  treated  3  3  Annotation.TXT")
 
-system("RScript Make_venn.R  DESeq2_FDR005_filtered.tsv  edgeR_FDR005_filtered.tsv DESeq2  edgeR  FDR005 Annotation.TXT")
+system("RScript Make_venn.R  DESeq2_FDR005_filtered.tsv  edgeR_FDR005_filtered.tsv DESeq2  edgeR  FDR005   Annotation.TXT")
 
 ```
 
