@@ -87,8 +87,8 @@ Rscript ../Make_Venn.R DESeq2_FDR005_filtered.tsv  edgeR_FDR005_filtered.tsv DES
 | Rdata Files 	| edgeR_results.RData 	| edgeR results stored as Rdata Object 	|
 |  	| DESeq2_results.RData 	| DESeq2 results stored as Rdata Object 	|
 | Exploratory data visualizations 	| DESeq2_Cluster_Dendrogram.png 	| cluster dendrogram for control and treatment samples 	|
-|  	| DESeq2_Cooks_distance_boxplot.png 	| heatmap showing the Euclidian distances between samples 	|
-|  	| Sample_distance_matrix.png 	| Boxplot showing the distribution of Cook’s distances for each library 	|
+|  	| DESeq2_Cooks_distance_boxplot.png 	| Boxplot showing the distribution of Cook’s distances for each library|
+|  	| Sample_distance_matrix.png 	| heatmap showing the Euclidian distances between samples 	|
 |  	| DESeq2_PCA_with_Labels.png 	| PCA plot with lables 	|
 |  	| edgeR_mds.png 	| PCA plot from edgeR 	|
 | DESeq2 Result Tables 	| DESeq2_All.tsv 	| Complete Table from DESeq2 (no filter) 	|
